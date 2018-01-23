@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RHCollectionViewCell" customModule="DanTang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="139" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-np-dNE">
+                        <rect key="frame" x="54" y="69" width="31" height="26"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zfc-1D-3Wk">
+                        <rect key="frame" x="0.0" y="0.0" width="139" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="139" id="DP1-1x-oXf"/>
+                            <constraint firstAttribute="height" constant="164" id="U1i-fv-aHk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xi-xq-6Bg">
+                        <rect key="frame" x="5" y="176" width="134" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhB-ib-cdL">
+                        <rect key="frame" x="5" y="215" width="38" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99878913164138794" green="0.29113906621932983" blue="0.23897799849510193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOp-1L-Yh9">
+                        <rect key="frame" x="111" y="215" width="23" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="fB8-LL-FFL"/>
+                        </constraints>
+                        <state key="normal" title="0" image="Search_GiftBtn_Default_12x10_">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yIu-np-dNE" firstAttribute="centerY" secondItem="zfc-1D-3Wk" secondAttribute="centerY" id="5GS-PY-apM"/>
+                <constraint firstAttribute="trailing" secondItem="zfc-1D-3Wk" secondAttribute="trailing" id="8jY-Lm-oPL"/>
+                <constraint firstAttribute="bottom" secondItem="JhB-ib-cdL" secondAttribute="bottom" constant="5" id="E0O-bD-cBZ"/>
+                <constraint firstItem="VOp-1L-Yh9" firstAttribute="centerY" secondItem="JhB-ib-cdL" secondAttribute="centerY" id="FyY-0x-mKE"/>
+                <constraint firstItem="yIu-np-dNE" firstAttribute="centerX" secondItem="zfc-1D-3Wk" secondAttribute="centerX" id="Hzf-JB-bxG"/>
+                <constraint firstItem="zfc-1D-3Wk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b94-fv-65J"/>
+                <constraint firstAttribute="trailing" secondItem="VOp-1L-Yh9" secondAttribute="trailing" constant="5" id="e1S-FK-gcM"/>
+                <constraint firstAttribute="trailing" secondItem="4xi-xq-6Bg" secondAttribute="trailing" id="eZb-bA-Q9S"/>
+                <constraint firstItem="zfc-1D-3Wk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fzh-kk-lTM"/>
+                <constraint firstItem="4xi-xq-6Bg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="hLu-7e-I48"/>
+                <constraint firstItem="VOp-1L-Yh9" firstAttribute="height" secondItem="JhB-ib-cdL" secondAttribute="height" id="itU-Vc-kZc"/>
+                <constraint firstItem="JhB-ib-cdL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="k8B-Kl-AF2"/>
+                <constraint firstItem="4xi-xq-6Bg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="l0l-zB-Hha"/>
+                <constraint firstItem="4xi-xq-6Bg" firstAttribute="top" secondItem="zfc-1D-3Wk" secondAttribute="bottom" constant="12" id="u8a-OJ-Tfk"/>
+            </constraints>
+            <connections>
+                <outlet property="likeButton" destination="VOp-1L-Yh9" id="I7B-DJ-jnb"/>
+                <outlet property="placeholderBtn" destination="yIu-np-dNE" id="lc0-If-YAN"/>
+                <outlet property="priceLabel" destination="JhB-ib-cdL" id="caW-7c-XM4"/>
+                <outlet property="productImageView" destination="zfc-1D-3Wk" id="74b-na-b8Q"/>
+                <outlet property="titleLabel" destination="4xi-xq-6Bg" id="PhO-Ar-jdc"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+        <image name="Search_GiftBtn_Default_12x10_" width="12" height="10"/>
+    </resources>
+</document>
